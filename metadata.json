@@ -1,0 +1,6 @@
+{
+  "name": "Bio-HUD Cyber Athletic 건강관리",
+  "description": "실시간 걸음수, 수면 분석, 칼로리 소모 및 생체 지표 모니터링을 제공하는 고성능 사이버 애슬레틱 바이오 HUD 건강관리 앱",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-surface: #10141a;
+    --color-surface-dim: #10141a;
+    --color-surface-bright: #353940;
+    --color-surface-container-lowest: #0a0e14;
+    --color-surface-container-low: #181c22;
+    --color-surface-container: #1c2026;
+    --color-surface-container-high: #262a31;
+    --color-surface-container-highest: #31353c;
+    --color-on-surface: #dfe2eb;
+    --color-on-surface-variant: #bacbb9;
+    --color-primary: #75ff9e;
+    --color-primary-container: #00e676;
+    --color-secondary: #dcfdff;
+    --color-secondary-container: #00f1fd;
+    --color-tertiary: #e9dfff;
+    --color-tertiary-container: #cfbfff;
+    --color-error: #ffb4ab;
+  }
+
+  body {
+    background-color: #10141a;
+    color: #dfe2eb;
+    font-family: 'Geist', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+/* Specific classes required by the navigation flow and design tokens */
+.bg-surface-container {
+  background-color: #1c2026 !important;
+}
+
+.bg-surface-container-high {
+  background-color: #262a31 !important;
+}
+
+.bg-surface-container-low {
+  background-color: #181c22 !important;
+}
+
+.bg-surface-container-lowest {
+  background-color: #0a0e14 !important;
+}
+
+.bg-surface-container-highest {
+  background-color: #31353c !important;
+}
+
+.gap-space-md {
+  gap: 0.75rem !important;
+}
+
+.gap-space-sm {
+  gap: 0.5rem !important;
+}
+
+.gap-space-lg {
+  gap: 1rem !important;
+}
+
+.font-hud {
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+}
+
+.tnum {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Neon Glow Utilities */
+.hud-glow-emerald {
+  box-shadow: 0 0 16px -2px rgba(0, 230, 118, 0.28), inset 0 0 8px rgba(0, 230, 118, 0.12);
+}
+
+.hud-glow-cyan {
+  box-shadow: 0 0 16px -2px rgba(0, 242, 254, 0.28), inset 0 0 8px rgba(0, 242, 254, 0.12);
+}
+
+.hud-glow-violet {
+  box-shadow: 0 0 16px -2px rgba(124, 77, 255, 0.28), inset 0 0 8px rgba(124, 77, 255, 0.12);
+}
+
+.hairline-border {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.hairline-top {
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* Cyber telemetry subtle scanlines / grid pattern */
+.cyber-grid {
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
